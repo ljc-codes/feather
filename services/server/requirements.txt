@@ -1,4 +1,5 @@
 dnspython==1.16.0
+graphene-mongo==0.2.12
+PyYAML==3.12
 uvicorn==0.11.5
 starlette==0.13.4
-graphene-mongo==0.2.12
