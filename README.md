@@ -1,5 +1,5 @@
 Toucan is: 
 
-GCP + Mongo Atlas + Graphql + Vue
+GCP + Mongo Atlas + Graphql + Vue + Apollo
 
 starter code. 
