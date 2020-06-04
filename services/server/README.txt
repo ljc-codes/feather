@@ -13,15 +13,10 @@ SUMMARY
     I think the structure is intuitive but i've done a lot of commenting to make things clear
     I have also pasted some links to documentation for some of the libraries.
 
-    You can find instructions on how to log into Mongo atlas in the readme at top level.
-    All data is in a cluster name: 'cluster-0'.
-
 STRUCTURE
 
 -server
     - src 
-        - config 
-            - artemis-mongoatlas-gateway.json - credentials to access mongodb atlas cluster-0.
         - gql 
             - mutation.py - mongoengine-graphene mutations
             - queries.py  - mongoengine-graphene queries
