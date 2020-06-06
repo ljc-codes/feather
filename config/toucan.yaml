@@ -1,7 +1,7 @@
 # Program Settings 
 config:
     mongo: 
-        uri : "mongodb+srv://developartemis:ForABetterStockMarket2020@cluster0-j0aex.mongodb.net/develop?retryWrites=true&w=majority"
+        uri : "mongodb+srv://<XXX>:<XXX>@<XXX>-j0aex.mongodb.net/<XXX>?retryWrites=true&w=majority"
     gcp:
         service_account: ""
         
