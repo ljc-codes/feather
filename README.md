@@ -3,7 +3,7 @@
 
 Toucan is: 
 
-**Google Cloud Platform + Guvicorn +  Mongo Atlas + Graphql + Vue + Apollo**
+**Google Cloud Platform + Firebase +  Guvicorn +  Mongo Atlas + Graphql + Vue + Apollo**
 
 starter code. 
 
