@@ -4,7 +4,7 @@
 
 ## What is it?
 
-**toucan** is starter code for developing modern apps. 
+**toucan** is starter code for developing modern web apps. 
 
 ## Technology
 
