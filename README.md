@@ -24,7 +24,7 @@ Out of the box, Toucan comes with several features including:
 Current support is limited to OSX
 
 ```sh
-# Installs required libraries and runs server and client locally. 
+# Installs required libraries. Runs server and client locally. 
 ./fly_local.sh
 ```
 
