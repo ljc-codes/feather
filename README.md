@@ -2,19 +2,32 @@
 ## OSX (Darwin) compatible
 ### version BETA
 
-Toucan is: 
 
-**Google Cloud Platform + Firebase +  Guvicorn +  Mongo Atlas + Graphql + Vue + Apollo**
-
-starter code for modern web apps.
 
 ## What is it?
 
-**toucan** is a lightweight starter code for developing modern apps. 
-It consists of two services: 
+**toucan** is starter code for developing modern apps. 
 
-1) client - GCP Cloud Build + Firebase Hosting + Vue + Apollo
-2) server - GCP Cloud Run + Guvicorn + MongoDB Atlas + Graphql 
+## Technology
+
+**Google Cloud Platform + Firebase +  Guvicorn +  Mongo Atlas + Graphql + Vue + Apollo**
+
+## Features
+Out of the box, Toucan comes with several features including: 
+   - Single Page Vue frontend
+   - Uvicorn ASGI server hosting a graphql api backend
+   - Easy to use yaml for specifying build configurations and exteral resources. 
+   - MongoDB Atlas integration  
+   - Prebuilt example models and backend interactions. 
+   - Scripts to build and run services. 
+   - GCP CIDC (if triggers and IAM is configured) 
+
+## Services
+
+Toucan consists of two services: 
+
+1) **client** - GCP Cloud Build + Firebase Hosting + Vue + Apollo
+2) **server** - GCP Cloud Run + Guvicorn + MongoDB Atlas + Graphql 
 
 ## Config
 
