@@ -27,7 +27,6 @@ images:
 
 substitutions:
   _DOCKER_IMAGE : "gqlmongoimage"
-  _GCP_CLOUD_RUN_API_NAME: "gqlmongogateway"
+  _GCP_CLOUD_RUN_API_NAME: "graphql-mongo-api"
   _GCP_PROJECT :  "toucan-279505"
-  _GCP_CLOUD_RUN_API_NAME : "graphql-mongo-api"
   _GCP_REGION : "us-east1"
