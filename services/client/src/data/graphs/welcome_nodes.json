@@ -1,0 +1,8 @@
+[
+    {"id":2, "name":"Data",      "_color":"#ff0066", "_size": 50},
+    {"id":3, "name":"Community", "_color":"#33cc33", "_size": 50},
+    {"id":4, "name":"Office",   "_color":"#660066", "_size": 30},
+    {"id":5, "name":"Sectors",   "_color":"#ff9966", "_size": 30},
+    {"id":6, "name":"Equities",  "_color":"#9933ff", "_size": 30},
+    {"id":7, "name":"Theses",    "_color":"#ccccff", "_size": 30}
+]
