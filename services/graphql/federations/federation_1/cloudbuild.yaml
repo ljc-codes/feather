@@ -1,0 +1,32 @@
+# GCP App Engine Deploys Server
+steps:
+  # Builds Docker Image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/${_GCP_PROJECT}/${_DOCKER_IMAGE}', './services/server']
+  
+  # Push the container image to Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/${_GCP_PROJECT}/${_DOCKER_IMAGE}']
+  
+  # Deploy an image from Container Registry to Cloud Run
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+    - 'run'
+    - 'deploy'
+    - '${_GCP_CLOUD_RUN_API_NAME}'
+    - '--image'
+    - 'gcr.io/${_GCP_PROJECT}/${_DOCKER_IMAGE}'
+    - '--region'
+    - '${_GCP_REGION}'
+    - '--platform'
+    - 'managed'
+    - '--allow-unauthenticated'
+  
+images:
+  - 'gcr.io/${_GCP_PROJECT}/${_DOCKER_IMAGE}'
+
+substitutions:
+  _DOCKER_IMAGE : "gqlmongoimage"
+  _GCP_CLOUD_RUN_API_NAME: "graphql-mongo-api"
+  _GCP_PROJECT :  "toucan-279505"
+  _GCP_REGION : "us-east1"

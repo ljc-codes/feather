@@ -1,0 +1,23 @@
+apiVersion: skaffold/v1beta2
+kind : Config
+build:
+    artifacts:
+    - image: client
+        context: src/client
+
+    - image: graphql
+        context: src/graphql
+
+    tagPolicy:
+        gitCommit: {}
+deploy:
+    kubectl:
+        manifests:
+            - ./config/kubernetes/**.yaml
+profiles:
+- name: gcb
+  build:
+    googleCloudBuild:
+        diskSizeGb : 300
+        machineType: N1_HIGHCPU_32
+        timeout: 4000s

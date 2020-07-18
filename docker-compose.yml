@@ -1,0 +1,54 @@
+version : "3"
+
+services:
+    # Client Frontend Service
+
+
+    # Graphql Api Gateway
+    gateway:
+        build:
+            context: ./services/graphql/gateway
+            dockerfile: ./Dockerfile
+        depends_on:
+            - federation_0
+            - federation_1
+            - federation_2
+        restart: on-failure:50
+        ports:
+           - 2000:2000
+
+
+    # Graphql Federations
+    federation_0:
+        build:
+            context: ./services/graphql/federations/federation_0/src
+            dockerfile: ./Dockerfile
+        ports:
+            - 3000:3000
+
+    federation_1:
+        build:
+            context: ./services/graphql/federations/federation_1/src
+            dockerfile: ./Dockerfile
+        ports:
+            - 4000:4000
+
+    federation_2:
+        build:
+            context: ./services/graphql/federations/federation_2/src
+            dockerfile: ./Dockerfile
+        ports:
+            - 5000:5000
+    
+    client:
+        build:
+            context: ./services/client
+            dockerfile: ./Dockerfile
+        ports:
+            - 1000:1000
+        volumes:
+            - ./services/client:/app
+            - /app/node_modules
+
+    starlette:
+        image: "tiangolo/uvicorn-gunicorn-starlette:python3.7"

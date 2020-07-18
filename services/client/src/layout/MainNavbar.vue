@@ -36,85 +36,7 @@
               <!-- Here you can add your items from the section-start of your toolbar -->
             </mobile-menu>
             <md-list>
-              <li
-                v-if="showDownload"
-                class="md-list-item"
-              >
-                <a
-                  href="javascript:void(0)"
-                  class="md-list-item-router md-list-item-container md-button-clean dropdown"
-                >
-                  <div class="md-list-item-content">
-                    <drop-down direction="down">
-                      <md-button
-                        slot="title"
-                        class="md-button md-button-link md-white md-simple dropdown-toggle"
-                        data-toggle="dropdown"
-                      >
-                        <i class="material-icons">apps</i>
-                        <p>Components</p>
-                      </md-button>
-                      <ul class="dropdown-menu dropdown-with-icons">
-                        <li>
-                          <a href="#/presentation">
-                            <i class="material-icons">layers</i>
-                            Presentation
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#/">
-                            <i class="material-icons">line_style</i>
-                            All Components
-                          </a>
-                        </li>
-                        <li>
-                          <a :href="docs_link">
-                            <i class="material-icons">content_paste</i>
-                            Documentation
-                          </a>
-                        </li>
-                      </ul>
-                    </drop-down>
-                  </div>
-                </a>
-              </li>
-              <li
-                v-if="!showDownload"
-                class="md-list-item"
-              >
-                <a
-                  href="javascript:void(0)"
-                  class="md-list-item-router md-list-item-container md-button-clean dropdown"
-                >
-                  <div class="md-list-item-content">
-                    <drop-down direction="down">
-                      <md-button
-                        slot="title"
-                        class="md-button md-button-link md-white md-simple dropdown-toggle"
-                        data-toggle="dropdown"
-                      >
-                        <i class="material-icons">apps</i>
-                        <p>Components</p>
-                      </md-button>
-                      <ul class="dropdown-menu dropdown-with-icons">
-                        <li>
-                          <a href="#/presentation">
-                            <i class="material-icons">layers</i>
-                            Presentation
-                          </a>
-                        </li>
-                        <li>
-                          <a :href="docs_link">
-                            <i class="material-icons">content_paste</i>
-                            Documentation
-                          </a>
-                        </li>
-                      </ul>
-                    </drop-down>
-                  </div>
-                </a>
-              </li>
-
+            
               <li class="md-list-item">
                 <a
                   href="javascript:void(0)"
@@ -127,53 +49,12 @@
                         class="md-button md-button-link md-white md-simple dropdown-toggle"
                         data-toggle="dropdown"
                       >
-                        <i class="material-icons">view_day</i>
-                        <p>Sections</p>
+                        <i class="material-icons"></i>
+                        <p>Services</p>
                       </md-button>
                       <ul class="dropdown-menu dropdown-with-icons">
                         <li
-                          v-for="li in linksSections"
-                          :key="li.name"
-                        >
-                          <a
-                            :href="'#/sections#' + li.name"
-                            @click="
-                              () => {
-                                NavbarStore.showNavbar = false;
-                                toggledClass = false;
-                              }
-                            "
-                          >
-                            <i class="material-icons">{{ li.icon }}</i>
-                            {{
-                              li.name.charAt(0).toUpperCase() + li.name.slice(1)
-                            }}
-                          </a>
-                        </li>
-                      </ul>
-                    </drop-down>
-                  </div>
-                </a>
-              </li>
-
-              <li class="md-list-item">
-                <a
-                  href="javascript:void(0)"
-                  class="md-list-item-router md-list-item-container md-button-clean dropdown"
-                >
-                  <div class="md-list-item-content">
-                    <drop-down direction="down">
-                      <md-button
-                        slot="title"
-                        class="md-button md-button-link md-white md-simple dropdown-toggle"
-                        data-toggle="dropdown"
-                      >
-                        <i class="material-icons">view_carousel</i>
-                        <p>Examples</p>
-                      </md-button>
-                      <ul class="dropdown-menu dropdown-with-icons">
-                        <li
-                          v-for="li in linksExamples"
+                          v-for="li in services_links"
                           :key="li.name"
                         >
                           <a :href="'#/' + li.href">
@@ -189,13 +70,82 @@
 
               <li class="md-list-item">
                 <a
-                  href="#/signup-page"
+                  href="javascript:void(0)"
+                  class="md-list-item-router md-list-item-container md-button-clean dropdown"
+                >
+                  <div class="md-list-item-content">
+                    <drop-down direction="down">
+                      <md-button
+                        slot="title"
+                        class="md-button md-button-link md-white md-simple dropdown-toggle"
+                        data-toggle="dropdown"
+                      >
+                        <i class="material-icons"></i>
+                        <p>Research</p>
+                      </md-button>
+                      <ul class="dropdown-menu dropdown-with-icons">
+                        <li
+                          v-for="li in research_links"
+                          :key="li.name"
+                        >
+                          <a :href="'#/' + li.href">
+                            <i class="material-icons">{{ li.icon }}</i>
+                            {{ li.name }}
+                          </a>
+                        </li>
+                      </ul>
+                    </drop-down>
+                  </div>
+                </a>
+              </li>
+
+              <li class="md-list-item">
+                <a
+                  href="javascript:void(0)"
                   class="md-list-item-router md-list-item-container md-button-clean"
                 >
                   <div class="md-list-item-content">
-                    <md-button
-                      class="md-rose md-sm"
-                    >Signup</md-button>
+                      <md-button
+                        slot="title"
+                        class="md-button md-button-link md-white md-simple"
+                      >
+                        <i class="material-icons">community</i>
+                        <p>Team</p>
+                      </md-button>
+                  </div>
+                </a>
+              </li>
+
+              <li class="md-list-item">
+                <a
+                  href="javascript:void(0)"
+                  class="md-list-item-router md-list-item-container md-button-clean"
+                >
+                  <div class="md-list-item-content">
+                      <md-button
+                        slot="title"
+                        class="md-button md-button-link md-white md-simple"
+                      >
+                        <i class="material-icons"></i>
+                        <p>Contact</p>
+                      </md-button>
+                  </div>
+                </a>
+              </li>
+
+              <li class="md-list-item">
+                <a
+                  href="javascript:void(0)"
+                  class="md-list-item-router md-list-item-container md-button-clean"
+                >
+                  <div class="md-list-item-content">
+                      <md-button
+                        slot="title"
+                        class="md-button md-button-link md-white md-simple"
+                      >
+                        <i class="material-icons"></i>
+                        <p>Blog</p>
+                      </md-button>
                   </div>
                 </a>
               </li>
@@ -204,21 +154,9 @@
                   <!-- This is a hidden spacer 
                        see scoped style at eoc 
                   -->
-                  <spacer>..</spacer>
+                  <spacer>...</spacer>
               </li>
 
-              <li class="md-list-item">
-                <a
-                  href="#/login-page"
-                  class="md-list-item-router md-list-item-container md-button-clean"
-                >
-                  <div class="md-list-item-content">
-                    <md-button
-                      class="md-rose md-sm"
-                    >Login</md-button>
-                  </div>
-                </a>
-              </li>
             </md-list>
           </div>
         </div>
@@ -280,7 +218,7 @@ export default {
         "https://demos.creative-tim.com/vue-material-kit-pro/documentation/",
       extraNavClasses: "",
       toggledClass: false,
-      brand: "toucan",
+      brand: "Theta Equity Partners",
       linksSections: [
         { name: "headers", icon: "dns" },
         { name: "features", icon: "build" },
@@ -291,25 +229,18 @@ export default {
         { name: "testimonials", icon: "chat" },
         { name: "contacts", icon: "call" }
       ],
-      linksExamples: [
-        { name: "About Us", href: "about-us", icon: "account_balance" },
-        { name: "Blog Post", href: "blog-post", icon: "art_track" },
-        { name: "Blog Posts", href: "blog-posts", icon: "view_quilt" },
-        { name: "Contact Us", href: "contact-us", icon: "location_on" },
-        { name: "Landing Page", href: "landing-page", icon: "view_day" },
-        { name: "Login Page", href: "login-page", icon: "fingerprint" },
-        { name: "Pricing Page", href: "pricing-page", icon: "attach_money" },
-        {
-          name: "Shopping Cart",
-          href: "shopping-cart",
-          icon: "shopping_basket"
-        },
-        { name: "Ecommerce Page", href: "ecommerce-page", icon: "store" },
-        { name: "Product Page", href: "product-page", icon: "shopping_cart" },
-        { name: "Profile Page", href: "profile-page", icon: "account_circle" },
-        { name: "Signup Page", href: "signup-page", icon: "person_add" },
-        { name: "Error Page", href: "error-page", icon: "error" }
-      ]
+      services_links: [ 
+        { name: "Private Equity / Venture Capital", href: "about-us", icon: "account_balance" },
+        { name: "Corporations", href: "blog-post", icon: "art_track" },
+        { name: "Public Equities", href: "blog-posts", icon: "view_quilt" },
+      ],
+      research_links: [ 
+        { name: "C3 - Customer Cohort Chart", href: "about-us", icon: "account_balance" },
+        { name: "Farfetch Q2 2019 Update", href: "blog-post", icon: "art_track" },
+        { name: "Slack DPO Valuation", href: "blog-posts", icon: "view_quilt" },
+        { name: "Revolve IPO", href: "blog-posts", icon: "view_quilt" },
+        { name: "Lyft IPO Valuation", href: "blog-posts", icon: "view_quilt" },
+      ],
     };
   },
   computed: {

@@ -1,0 +1,23 @@
+# Program Settings 
+config:
+
+    services:
+
+        graphql:
+            # Microservices uris
+            api_uri:
+                # Microservices 
+                federation_0 : "http://127.0.0.1:8000"
+                federation_1 : "http://127.0.0.1:8081"
+                federation_2 : "http://127.0.0.1:8082"
+            mongo_uri:
+                # Microservices 
+                federation_0 : "mongodb+srv://develop:develop@cluster0.g4yil.mongodb.net/<dbname>?retryWrites=true&w=majority"
+                federation_1 : "mongodb+srv://develop:develop@cluster0.g4yil.mongodb.net/<dbname>?retryWrites=true&w=majority"
+                federation_2 : "mongodb+srv://develop:develop@cluster0.g4yil.mongodb.net/<dbname>?retryWrites=true&w=majority"
+        client:
+            a : ""
+        compute:
+            a : ""
+        email:
+            a : ""

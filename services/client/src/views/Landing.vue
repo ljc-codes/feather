@@ -8,23 +8,22 @@
       <div class="container">
         <div class="md-layout">
           <div class="md-layout-item md-size-50 md-small-size-100">
-            <h1 class="title">
-              toucan
-            </h1>
-            <h4>
-              Every landing page needs a small description after the big bold
-              title, that's why we added this text here. Add here all the
-              information that can make you or your product create the first
-              impression.
-            </h4>
-            <br>
+            <center><h1 class="title">
+              Theta Equity Partners
+            </h1></center>
+            <center><h3>
+              Customer-Based Corporate Valuation
+            </h3></center>
+            <center><h4>
+              Revolutionizing Finance
+            </h4></center>
+            <br><center>
             <md-button
               href="/#/signup-page"
-              class="md-rose md-lg"
+              class="md-info md-lg"
               target="_blank"
-            >
-              <i class="fas fa-user-plus" /> Signup
-            </md-button>
+            > Get Started
+            </md-button></center>
           </div>
         </div>
       </div>

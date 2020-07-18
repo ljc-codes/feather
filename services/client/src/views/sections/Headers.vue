@@ -1,573 +1,388 @@
 <template>
   <div class="wrapper">
-    <!-- Headers 1 -->
-    <div class="section section-header-1 pb-0">
-      <md-toolbar
-        id="toolbar"
-        md-elevation="0"
-        class="md-absolute md-transparent"
-      >
-        <div class="md-toolbar-row">
-          <div class="md-toolbar-section-start">
-            <h3 class="md-title">
-              Creative Tim
-            </h3>
-          </div>
-
-          <div class="md-toolbar-section-center">
-            <md-list class="ml-auto">
-              <md-list-item
-                href="javascript:void(0)"
-                target="_blank"
-              >
-                Home
-              </md-list-item>
-              <md-list-item
-                href="javascript:void(0)"
-                target="_blank"
-              >
-                About Us
-              </md-list-item>
-              <md-list-item
-                href="javascript:void(0)"
-                target="_blank"
-              >
-                Products
-              </md-list-item>
-              <md-list-item
-                href="javascript:void(0)"
-                target="_blank"
-              >
-                Contact Us
-              </md-list-item>
-            </md-list>
-          </div>
-
-          <div class="md-toolbar-section-end">
+    <parallax
+      class="section page-header header-filter"
+      parallax-active="true"
+      :style="headerStyle"
+    >
+      <div class="container">
+        <div class="md-layout">
+          <div class="md-layout-item md-size-50 md-small-size-100">
+            <center><h1 class="title">
+              Theta Equity Partners
+            </h1></center>
+            <center><h3>
+              Customer-Based Corporate Valuation
+            </h3></center>
+            <center><h4>
+              Revolutionizing Finance
+            </h4></center>
+            <br><center>
             <md-button
-              class="md-just-icon md-simple md-toolbar-toggle"
-              :class="{ toggled: toggledClass }"
-              @click="toggleNavbarMobile()"
-            >
-              <span class="icon-bar" />
-              <span class="icon-bar" />
-              <span class="icon-bar" />
-            </md-button>
-
-            <div class="md-collapse">
-              <div class="md-collapse-wrapper">
-                <mobile-menu nav-mobile-section="false">
-                  <!-- Here you can add your items from the section-start of your toolbar -->
-                </mobile-menu>
-
-                <md-list>
-                  <md-list-item
-                    href="https://twitter.com/CreativeTim"
-                    target="_blank"
-                  >
-                    <i class="fab fa-twitter" />
-                  </md-list-item>
-                  <md-list-item
-                    href="https://www.facebook.com/CreativeTim"
-                    target="_blank"
-                  >
-                    <i class="fab fa-facebook-square" />
-                  </md-list-item>
-                  <md-list-item
-                    href="https://www.instagram.com/CreativeTimOfficial"
-                    target="_blank"
-                  >
-                    <i class="fab fa-instagram" />
-                  </md-list-item>
-                </md-list>
-              </div>
-            </div>
-          </div>
-        </div>
-      </md-toolbar>
-      <div
-        class="page-header header-filter"
-        :style="header('1')"
-      >
-        <div class="container">
-          <div class="md-layout">
-            <div
-              class="md-layout-item md-size-50 md-small-size-100 ml-auto text-right"
-            >
-              <h1 class="title">
-                Forest Brings You A Safer Way To Invest
-              </h1>
-              <h4>
-                Many people don’t invest even when they have the cash, citing
-                confusion and the time it takes to weigh all the risks and
-                benefits.
-              </h4>
-              <br>
-              <md-button
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                class="md-success md-lg"
-                target="_blank"
-              >
-                <i class="fas fa-ticket-alt" />
-                <span>Invest Now</span>
-              </md-button>
-            </div>
+              href="/#/signup-page"
+              class="md-info md-lg"
+              target="_blank"
+            > Get Started
+            </md-button></center>
           </div>
         </div>
       </div>
-    </div>
-    <!-- end Headers 1 -->
-
-    <!-- Headers 2 -->
-    <div class="section section-header-2 pt-0 pb-0">
-      <md-toolbar
-        id="toolbar"
-        md-elevation="0"
-        class="md-absolute md-transparent"
-      >
-        <div class="md-toolbar-row">
-          <div class="md-toolbar-section-start">
-            <h3 class="md-title">
-              Creative Tim
-            </h3>
-          </div>
-
-          <div class="md-toolbar-section-center">
-            <md-list class="ml-auto">
-              <md-list-item
-                href="javascript:void(0)"
-                target="_blank"
-              >
-                Home
-              </md-list-item>
-              <md-list-item
-                href="javascript:void(0)"
-                target="_blank"
-              >
-                About Us
-              </md-list-item>
-              <md-list-item
-                href="javascript:void(0)"
-                target="_blank"
-              >
-                Products
-              </md-list-item>
-              <md-list-item
-                href="javascript:void(0)"
-                target="_blank"
-              >
-                Contact Us
-              </md-list-item>
-            </md-list>
-          </div>
-
-          <div class="md-toolbar-section-end">
-            <md-button
-              class="md-just-icon md-simple md-toolbar-toggle"
-              :class="{ toggled: toggledClass }"
-              @click="toggleNavbarMobile()"
-            >
-              <span class="icon-bar" />
-              <span class="icon-bar" />
-              <span class="icon-bar" />
-            </md-button>
-
-            <div class="md-collapse">
-              <div class="md-collapse-wrapper">
-                <mobile-menu nav-mobile-section="false">
-                  <!-- Here you can add your items from the section-start of your toolbar -->
-                </mobile-menu>
-
-                <md-list>
-                  <md-list-item
-                    href="https://twitter.com/CreativeTim"
-                    target="_blank"
-                  >
-                    <i class="fab fa-twitter" />
-                  </md-list-item>
-                  <md-list-item
-                    href="https://www.facebook.com/CreativeTim"
-                    target="_blank"
-                  >
-                    <i class="fab fa-facebook-square" />
-                  </md-list-item>
-                  <md-list-item
-                    href="https://www.instagram.com/CreativeTimOfficial"
-                    target="_blank"
-                  >
-                    <i class="fab fa-instagram" />
-                  </md-list-item>
-                </md-list>
-              </div>
-            </div>
-          </div>
-        </div>
-      </md-toolbar>
-      <div
-        class="page-header header-filter"
-        :style="header('2')"
-      >
+    </parallax>
+    <div class="main main-raised">
+      <div class="section">
         <div class="container">
           <div class="md-layout">
             <div
-              class="md-layout-item md-size-66 md-small-size-100 md-xlarge-size-80 mx-auto text-center"
+              class="md-layout-item md-size-66 md-small-size-100 mx-auto text-center"
             >
-              <h1 class="title">
-                The Road To Disrupt: The Final Steps
-              </h1>
-              <h4>
-                This is it for the 30 startups involved with Startup
-                Battlefield. It’s all on the line and the companies are about to
-                see who will take home $50,000 and the Disrupt Cup.
-              </h4>
-            </div>
-            <div class="md-layout-item md-size-66 md-small-100 mx-auto">
-              <md-card class="md-card-form-horizontal">
-                <md-card-content>
-                  <form
-                    action=""
-                    method=""
-                  >
-                    <div class="md-layout">
-                      <div class="md-layout-item md-size-25 md-small-size-100">
-                        <md-field>
-                          <md-input
-                            v-model="companyName"
-                            placeholder="Company Name"
-                          />
-                        </md-field>
-                      </div>
-                      <div class="md-layout-item md-size-25 md-small-size-100">
-                        <md-field>
-                          <md-input
-                            v-model="companyEmail"
-                            placeholder="Company Email"
-                          />
-                        </md-field>
-                      </div>
-                      <div class="md-layout-item md-size-25 md-small-size-100">
-                        <md-field>
-                          <md-input
-                            v-model="companyPassword"
-                            placeholder="Company Password"
-                          />
-                        </md-field>
-                      </div>
-                      <div class="md-layout-item md-size-25 md-small-size-100">
-                        <md-button
-                          class="md-success md-block"
-                        >
-                          Subscribe
-                        </md-button>
-                      </div>
-                    </div>
-                  </form>
-                </md-card-content>
-              </md-card>
+              <h3 >
+                We help you better estimate company value by predicting future customer behavior – acquisition, churn, spending
+              </h3>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- end Headers 2 -->
-
-    <!-- Headers 3 -->
-    <div class="section section-header-3 pt-0 pb-0">
-      <md-toolbar
-        id="toolbar"
-        md-elevation="0"
-        class="md-absolute md-transparent"
-      >
-        <div class="md-toolbar-row">
-          <div class="md-toolbar-section-start">
-            <h3 class="md-title">
-              Creative Tim
-            </h3>
-          </div>
-
-          <div class="md-toolbar-section-end">
-            <md-button
-              class="md-just-icon md-simple md-toolbar-toggle"
-              :class="{ toggled: toggledClass }"
-              @click="toggleNavbarMobile()"
-            >
-              <span class="icon-bar" />
-              <span class="icon-bar" />
-              <span class="icon-bar" />
-            </md-button>
-
-            <div class="md-collapse">
-              <div class="md-collapse-wrapper">
-                <mobile-menu nav-mobile-section="false">
-                  <!-- Here you can add your items from the section-start of your toolbar -->
-                </mobile-menu>
-
-                <md-list>
-                  <md-list-item
-                    href="javascript:void(0)"
-                    target="_blank"
-                  >
-                    Home
-                  </md-list-item>
-                  <md-list-item
-                    href="javascript:void(0)"
-                    target="_blank"
-                  >
-                    About Us
-                  </md-list-item>
-                  <md-list-item
-                    href="javascript:void(0)"
-                    target="_blank"
-                  >
-                    Products
-                  </md-list-item>
-                  <md-list-item
-                    href="javascript:void(0)"
-                    target="_blank"
-                  >
-                    Contact Us
-                  </md-list-item>
-                </md-list>
-              </div>
-            </div>
-          </div>
-        </div>
-      </md-toolbar>
-      <el-carousel
-        indicator-position="none"
-        class="no-border no-height"
-        trigger="click"
-        :interval="5000"
-      >
-        <el-carousel-item>
-          <div
-            class="page-header header-filter"
-            :style="header('3')"
-          >
-            <div class="container">
-              <div class="md-layout">
-                <div
-                  class="md-layout-item md-size-66 md-small-size-100 text-left"
-                >
-                  <h1 class="title">
-                    There Will Be Blood-Red Trees
-                  </h1>
-                  <h4>
-                    For weeks now, Romans have been breathlessly awaiting the
-                    presentation of the Italian capital’s official Christmas
-                    tree, a year after the resounding social media debacle that
-                    felled last year’s fir.
-                  </h4>
-                  <br>
-                  <div class="buttons">
-                    <md-button
-                      href="javascript:void(0)"
-                      class="md-danger md-lg"
-                    >
-                      Read More
-                    </md-button>
-                    <md-button
-                      href="javascript:void(0)"
-                      class="md-twitter md-simple md-white md-just-icon"
-                    >
-                      <i class="fab fa-twitter" />
-                    </md-button>
-                    <md-button
-                      href="javascript:void(0)"
-                      class="md-facebook md-simple md-white md-just-icon"
-                    >
-                      <i class="fab fa-facebook-square" />
-                    </md-button>
-                    <md-button
-                      href="javascript:void(0)"
-                      class="md-simple md-white md-just-icon"
-                    >
-                      <i class="fab fa-get-pocket" />
-                    </md-button>
+          
+          <div class="features text">
+            <div class="md-layout">
+              <div class="md-layout-item md-size-33 md-small-size-100">
+                <div class="info">
+                  <div class="icon icon-info">
+                    <md-icon>chat</md-icon>
                   </div>
+                  <h4>
+                    Customer Data
+                  </h4>
+                  <p>
+                    Traditional corporate valuation methods often miss key customer-driven leading indicators of company value, which limits their accuracy.
+                  </p>
+                  <br>
+                  <p>
+                    These methods are often​:
+                    <ul>
+                      <li>Not focused on modeling the customer-related activity which generates companies' revenue.</li>
+                      <li>Backward-looking, extrapolating off of historical financials.</li>
+                      <li>Less diagnostic for growing companies with negative cash flows</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+              <div class="md-layout-item md-size-33 md-small-size-100">
+                <div class="info">
+                  <div class="icon icon-success">
+                    <md-icon>verified_user</md-icon>
+                  </div>
+                  <h4>
+                    Valuation
+                  </h4>
+                  <p>
+                    We incorporate predictions of customer behavior directly into the company valuation, leading to better accuracy and deeper insights
+                  </p>
+                  <br>
+                  <p>
+                    These methods are often​:
+                    <ul>
+                      <li>Focused on the underlying customer behaviors and their impact on company value</li>
+                      <li>Forward-looking – we predict future customer value and its impact on future financials </li>
+                      <li>Well-suited for growing companies with negative cash flows</li>
+                    </ul>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </el-carousel-item>
-        <el-carousel-item>
-          <div
-            class="page-header header-filter"
-            :style="header('4')"
-          >
-            <div class="container">
-              <div class="md-layout">
-                <div
-                  class="md-layout-item md-size-66 md-small-size-100 mx-auto text-center"
+        </div>
+
+        <div
+          class="md-layout-item md-size-33 md-small-size-100 mx-auto text-center"
+        >
+          <md-button class="md-info md-lg">
+            Download Presentation and case study
+          </md-button>
+        </div>
+      
+  
+      </div>
+      <div class="section text-center">
+        <div class="container">
+          <h2 class="title">
+            Here is our team
+          </h2>
+          <div class="team">
+            <div class="md-layout">
+              <div class="md-layout-item md-size-50 md-small-size-100">
+                <profile-card
+                  text-center
+                  card-plain
+                  type="horizontal"
+                  :shadow-normal="false"
+                  :no-colored-shadow="false"
+                  :card-image="cardProfile3.cardProfile1"
                 >
-                  <h1 class="title">
-                    Material Kit PRO
-                  </h1>
-                  <h4>
-                    While the wildfire, known as the Woolsey Fire, raged through
-                    the slopes and canyons over the next two weeks, scorching
-                    over 1,500 buildings and killing three people, park rangers
-                    in the Santa Monica Mountains.
-                  </h4>
-                  <br>
-                  <h6>Connect with us on:</h6>
-                  <div class="buttons">
+                  <template slot="cardContent">
+                    <h4 class="card-title">
+                      Alec Thompson
+                    </h4>
+                    <h6 class="card-category text-muted">
+                      Founder
+                    </h6>
+                    <p class="card-description">
+                      Don't be scared of the truth because we need to restart
+                      the human foundation in truth...
+                    </p>
+                  </template>
+                  <template slot="cardAction">
                     <md-button
                       href="javascript:void(0)"
-                      class="md-twitter md-simple md-white md-lg md-just-icon ml-auto"
+                      class="md-twitter md-just-icon md-simple"
                     >
                       <i class="fab fa-twitter" />
                     </md-button>
                     <md-button
                       href="javascript:void(0)"
-                      class="md-facebook md-simple md-white md-lg md-just-icon"
+                      class="md-facebook md-just-icon md-simple"
                     >
-                      <i class="fab fa-facebook-square" />
+                      <i class="fab fa-facebook" />
                     </md-button>
                     <md-button
                       href="javascript:void(0)"
-                      class="md-google md-simple md-white md-lg md-just-icon"
+                      class="md-google md-just-icon md-simple"
                     >
-                      <i class="fab fa-google-plus-g" />
+                      <i class="fab fa-google" />
+                    </md-button>
+                  </template>
+                </profile-card>
+              </div>
+              <div class="md-layout-item md-size-50 md-small-size-100">
+                <profile-card
+                  text-center
+                  card-plain
+                  type="horizontal"
+                  :shadow-normal="false"
+                  :no-colored-shadow="false"
+                  :card-image="cardProfile3.cardProfile2"
+                >
+                  <template slot="cardContent">
+                    <h4 class="card-title">
+                      Kendall Andrew
+                    </h4>
+                    <h6 class="card-category text-muted">
+                      GRAPHIC DESIGNER
+                    </h6>
+                    <p class="card-description">
+                      Don't be scared of the truth because we need to restart
+                      the human foundation in truth...
+                    </p>
+                  </template>
+                  <template slot="cardAction">
+                    <md-button
+                      href="javascript:void(0)"
+                      class="md-linkedin md-just-icon md-simple"
+                    >
+                      <i class="fab fa-linkedin" />
                     </md-button>
                     <md-button
                       href="javascript:void(0)"
-                      class="md-instagram md-simple md-white md-lg md-just-icon mr-auto"
+                      class="md-facebook md-just-icon md-simple"
+                    >
+                      <i class="fab fa-facebook" />
+                    </md-button>
+                    <md-button
+                      href="javascript:void(0)"
+                      class="md-dribbble md-just-icon md-simple"
+                    >
+                      <i class="fab fa-dribbble" />
+                    </md-button>
+                    <md-button
+                      href="javascript:void(0)"
+                      class="md-google md-just-icon md-simple"
+                    >
+                      <i class="fab fa-google" />
+                    </md-button>
+                  </template>
+                </profile-card>
+              </div>
+              <div class="md-layout-item md-size-50 md-small-size-100">
+                <profile-card
+                  text-center
+                  card-plain
+                  type="horizontal"
+                  :shadow-normal="false"
+                  :no-colored-shadow="false"
+                  :card-image="cardProfile3.cardProfile3"
+                >
+                  <template slot="cardContent">
+                    <h4 class="card-title">
+                      Gina Andrew
+                    </h4>
+                    <h6 class="card-category text-muted">
+                      PHOTOGRAPHER
+                    </h6>
+                    <p class="card-description">
+                      I love you like Kanye loves Kanye. Don't be scared of the
+                      truth.
+                    </p>
+                  </template>
+                  <template slot="cardAction">
+                    <md-button
+                      href="javascript:void(0)"
+                      class="md-youtube md-just-icon md-simple"
+                    >
+                      <i class="fab fa-youtube" />
+                    </md-button>
+                    <md-button
+                      href="javascript:void(0)"
+                      class="md-twitter md-just-icon md-simple"
+                    >
+                      <i class="fab fa-twitter" />
+                    </md-button>
+                    <md-button
+                      href="javascript:void(0)"
+                      class="md-instagram md-just-icon md-simple"
                     >
                       <i class="fab fa-instagram" />
                     </md-button>
-                  </div>
-                </div>
+                  </template>
+                </profile-card>
               </div>
-            </div>
-          </div>
-        </el-carousel-item>
-        <el-carousel-item>
-          <div
-            class="page-header header-filter"
-            :style="header('5')"
-          >
-            <div class="container">
-              <div class="md-layout">
-                <div
-                  class="md-layout-item md-size-66 md-small-size-100 ml-auto text-right"
+              <div class="md-layout-item md-size-50 md-small-size-100">
+                <profile-card
+                  text-center
+                  card-plain
+                  type="horizontal"
+                  :shadow-normal="false"
+                  :no-colored-shadow="false"
+                  :card-image="cardProfile3.cardProfile4"
                 >
-                  <h1 class="title">
-                    Mountain Dew throwback bring real sugar back to sodas once
-                    again
-                  </h1>
-                  <h4>
-                    They’re baaaack! I just spotted the greatest beverages on
-                    Earth in my local Rite Aid while shopping for New Year’s Eve
-                    refreshments.
-                  </h4>
-                  <br>
-                  <div class="buttons">
+                  <template slot="cardContent">
+                    <h4 class="card-title">
+                      George West
+                    </h4>
+                    <h6 class="card-category text-muted">
+                      BACKEND HACKER
+                    </h6>
+                    <p class="card-description">
+                      I love you like Kanye loves Kanye. Don't be scared of the
+                      truth.
+                    </p>
+                  </template>
+                  <template slot="cardAction">
                     <md-button
                       href="javascript:void(0)"
-                      class="md-white md-simple md-lg ml-auto"
+                      class="md-linkedin md-just-icon md-simple"
                     >
-                      <md-icon>share</md-icon> Share Offer
+                      <i class="fab fa-linkedin" />
                     </md-button>
                     <md-button
                       href="javascript:void(0)"
-                      class="md-danger md-lg"
+                      class="md-facebook md-just-icon md-simple"
                     >
-                      <md-icon>shopping_cart</md-icon> Shop Now
+                      <i class="fab fa-facebook" />
                     </md-button>
-                  </div>
-                </div>
+                    <md-button
+                      href="javascript:void(0)"
+                      class="md-google md-just-icon md-simple"
+                    >
+                      <i class="fab fa-google" />
+                    </md-button>
+                  </template>
+                </profile-card>
               </div>
             </div>
           </div>
-        </el-carousel-item>
-      </el-carousel>
+        </div>
+      </div>
+      <div class="section section-contacts">
+        <div class="container">
+          <div class="md-layout">
+            <div class="md-layout-item md-size-66 md-small-size-100 mx-auto">
+              <h2 class="text-center title">
+                Work with us
+              </h2>
+              <h4 class="text-center description">
+                Divide details about your product or agency work into parts.
+                Write a few lines about each one and contact us about any
+                further collaboration. We will responde get back to you in a
+                couple of hours.
+              </h4>
+              <form class="contact-form">
+                <div class="md-layout">
+                  <div class="md-layout-item md-size-50 md-small-size-100">
+                    <md-field>
+                      <label>Your Name</label>
+                      <md-input
+                        v-model="name"
+                        type="text"
+                      />
+                    </md-field>
+                  </div>
+                  <div class="md-layout-item md-size-50 md-small-size-100">
+                    <md-field>
+                      <label>Your Email</label>
+                      <md-input
+                        v-model="email"
+                        type="email"
+                      />
+                    </md-field>
+                  </div>
+                </div>
+                <md-field maxlength="5">
+                  <label>Your Message</label>
+                  <md-textarea v-model="message" />
+                </md-field>
+                <div class="md-layout">
+                  <div
+                    class="md-layout-item md-size-33 md-small-size-100 mx-auto text-center"
+                  >
+                    <md-button class="md-success">
+                      Send Message
+                    </md-button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- end Headers 3 -->
   </div>
 </template>
 
 <script>
+import { ProfileCard } from "@/components";
+import Mixins from "@/plugins/basicMixins";
+
 export default {
-  name: "Headers",
+  components: {
+    ProfileCard
+  },
+  mixins: [Mixins.HeaderImage],
+  bodyClass: "landing-page",
   data() {
     return {
-      companyName: null,
-      companyEmail: null,
-      companyPassword: null,
-      toggledClass: false,
-      headerImages: {
-        Image1: require("@/assets/img/bg12.jpg"),
-        Image2: require("@/assets/img/examples/office2.jpg"),
-        Image3: require("@/assets/img/dg1.jpg"),
-        Image4: require("@/assets/img/dg2.jpg"),
-        Image5: require("@/assets/img/dg3.jpg")
+      image: require("@/assets/img/background_city.jpg"),
+      name: null,
+      email: null,
+      message: null,
+      cardProfile3: {
+        cardProfile1: require("@/assets/img/faces/card-profile1-square.jpg"),
+        cardProfile2: require("@/assets/img/faces/card-profile6-square.jpg"),
+        cardProfile3: require("@/assets/img/faces/card-profile4-square.jpg"),
+        cardProfile4: require("@/assets/img/faces/card-profile2-square.jpg")
       }
     };
-  },
-  methods: {
-    header(nr) {
-      return {
-        backgroundImage: `url(${this.headerImages[`Image${nr}`]})`
-      };
-    },
-    bodyClick() {
-      let bodyClick = document.getElementById("bodyClick");
-
-      if (bodyClick === null) {
-        let body = document.querySelector("body");
-        let elem = document.createElement("div");
-        elem.setAttribute("id", "bodyClick");
-        body.appendChild(elem);
-
-        let bodyClick = document.getElementById("bodyClick");
-        bodyClick.addEventListener("click", this.toggleNavbarMobile);
-      } else {
-        bodyClick.remove();
-      }
-    },
-    toggleNavbarMobile() {
-      this.NavbarStore.showNavbar = !this.NavbarStore.showNavbar;
-      this.toggledClass = !this.toggledClass;
-      this.bodyClick();
-    }
   }
 };
 </script>
 
-<style lang="scss">
-.buttons {
+<style lang="scss" scoped>
+.md-card-actions.text-center {
   display: flex;
-  align-items: center;
+  justify-content: center !important;
+}
+.contact-form {
+  margin-top: 30px;
 }
 
-#headers {
-  .el-carousel__container {
-    height: 100vh !important;
-  }
-  .el-carousel {
-    border-radius: 0 !important;
-  }
-}
-
-.text-right {
-  text-align: right;
-}
-
-.border-radius-0 {
-  border-radius: 0;
-}
-
-.pb-0 {
-  padding-bottom: 0 !important;
-}
-.pt-0 {
-  padding-top: 0 !important;
-}
-
-@media all and (max-width: 960px) {
-  .md-card-form-horizontal .md-layout-item {
-    margin-top: 1.5rem;
-  }
+.md-has-textarea + .md-layout {
+  margin-top: 15px;
 }
 </style>

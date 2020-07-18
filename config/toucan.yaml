@@ -1,8 +1,0 @@
-# Program Settings 
-config:
-    mongo: 
-        uri : "mongodb+srv://"
-    gcp:
-        service_account: ""
-        
-    

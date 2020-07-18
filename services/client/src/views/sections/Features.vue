@@ -7,76 +7,68 @@
           <div
             class="md-layout-item md-size-66 md-small-size-100 mx-auto text-center"
           >
-            <h2 class="title">
-              Why our product is the best
+            <h2 >
+              We serve...
             </h2>
-            <h5 class="description">
-              This is the paragraph where you can write more details about your
-              product. Keep you user engaged by providing meaningful
-              information. Remember that by this time, the user is curious,
-              otherwise he wouldn't scroll to get here. Add a button if you want
-              the user to see more.
-            </h5>
           </div>
         </div>
         <div class="md-layout">
           <div class="md-layout-item md-size-33 md-small-size-100">
-            <info-areas
-              icon-color="info"
-              icon="chat"
-              text-center
-            >
-              <h4
-                slot="title"
-                class="info-title"
-              >
-                Free Chat
-              </h4>
-              <p slot="content">
-                Divide details about your product or agency work into parts.
-                Write a few lines about each one. A paragraph describing a
-                feature will be enough.
-              </p>
-            </info-areas>
-          </div>
+                <div class="info">
+                  <div class="icon icon-success">
+                    <md-icon>verified_user</md-icon>
+                  </div>
+                  <h4>
+                    Valuation
+                  </h4>
+                  <p>
+                    Gain a competitive edge in bidding by better understanding target's unit economics, more accurately estimating its value, and identifying levers to improve value of revenue streams
+                  </p>
+                  <p>
+                    Improve valuations of current portfolio companies by regularly assessing and improving customer value.
+                  </p>
+                  <p>
+                    Maximize return on investment when exiting a company by identifying sources of company value ignored by traditional valuation methods.
+                  </p>
+                </div>
+              </div>
           <div class="md-layout-item md-size-33 md-small-size-100">
-            <info-areas
-              icon-color="success"
-              icon="verified_user"
-              text-center
-            >
-              <h4
-                slot="title"
-                class="info-title"
-              >
-                Verified Users
-              </h4>
-              <p slot="content">
-                Divide details about your product or agency work into parts.
-                Write a few lines about each one. A paragraph describing a
-                feature will be enough.
-              </p>
-            </info-areas>
-          </div>
+                <div class="info">
+                  <div class="icon icon-success">
+                    <md-icon>verified_user</md-icon>
+                  </div>
+                  <h4>
+                    Valuation
+                  </h4>
+                  <p>
+                    Better understand health of your customer base and customers’ relationship to overall company valuation</p>
+                  <p>
+                    Get more favorable investment / M&A terms by having a data-driven view of your firm's value which incorporates sources of value ignored by other valuation methods
+                  </p>
+                  <p>
+                    Showcase full company value to outside investors by strategically disclosing key customer metrics directly linked to company valuation
+                  </p>
+                </div>
+              </div>
           <div class="md-layout-item md-size-33 md-small-size-100">
-            <info-areas
-              icon-color="danger"
-              icon="fingerprint"
-              text-center
-            >
-              <h4
-                slot="title"
-                class="info-title"
-              >
-                Fingerprint
-              </h4>
-              <p slot="content">
-                Divide details about your product or agency work into parts.
-                Write a few lines about each one. A paragraph describing a
-                feature will be enough.
-              </p>
-            </info-areas>
-          </div>
+                <div class="info">
+                  <div class="icon icon-success">
+                    <md-icon>verified_user</md-icon>
+                  </div>
+                  <h4>
+                    Valuation
+                  </h4>
+                  <p>
+                    Better estimate investments’ value and gain deeper insights into unit economics using publicly available data (SEC filings, presentations, etc.) </p>
+                  <p>
+                    Always have an up-to-date forward-looking view of portfolio investments
+                  </p>
+                  <p>
+                    We incorporate predictions of customer behavior directly into the company valuation, leading to better accuracy and deeper insights
+                  </p>
+                  
+                </div>
+              </div>
         </div>
       </div>
     </div>

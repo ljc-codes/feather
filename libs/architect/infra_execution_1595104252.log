@@ -1,0 +1,46 @@
+Updating and Installing gcloud components
+Provisioning infrastructure in artemis-dev-278204
+project number is 604310593762
+Granting __UNDEFINED__ access to the Cloud Build Service Account
+Executing the Set Up GCP Infra pipeline
+---------------------------------------------------------------- REMOTE BUILD OUTPUT ----------------------------------------------------------------
+starting build "07ddc5d2-02e3-4f2d-b980-5f648fa6a6f1"
+
+FETCHSOURCE
+Fetching storage object: gs://artemis-dev-278204_cloudbuild/source/1595104264.995135-5001aaee8e634cef9b60946ddab4ff53.tgz#1595104267166389
+Copying gs://artemis-dev-278204_cloudbuild/source/1595104264.995135-5001aaee8e634cef9b60946ddab4ff53.tgz#1595104267166389...
+/ [0 files][    0.0 B/  4.2 KiB]                                                / [1 files][  4.2 KiB/  4.2 KiB]                                                
+Operation completed over 1 objects/4.2 KiB.                                      
+BUILD
+Starting Step #0 - "Enable Google IAM APIs"
+Step #0 - "Enable Google IAM APIs": Already have image (with digest): gcr.io/cloud-builders/gcloud
+Step #0 - "Enable Google IAM APIs": 
+Step #0 - "Enable Google IAM APIs":                    ***** NOTICE *****
+Step #0 - "Enable Google IAM APIs": 
+Step #0 - "Enable Google IAM APIs": Official `cloud-sdk` images, including multiple tagged versions across multiple
+Step #0 - "Enable Google IAM APIs": platforms, can be found at
+Step #0 - "Enable Google IAM APIs": https://github.com/GoogleCloudPlatform/cloud-sdk-docker.
+Step #0 - "Enable Google IAM APIs": 
+Step #0 - "Enable Google IAM APIs": Suggested alternative images include:
+Step #0 - "Enable Google IAM APIs": 
+Step #0 - "Enable Google IAM APIs":     gcr.io/google.com/cloudsdktool/cloud-sdk
+Step #0 - "Enable Google IAM APIs":     gcr.io/google.com/cloudsdktool/cloud-sdk:alpine
+Step #0 - "Enable Google IAM APIs":     gcr.io/google.com/cloudsdktool/cloud-sdk:debian_component_based
+Step #0 - "Enable Google IAM APIs":     gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+Step #0 - "Enable Google IAM APIs": 
+Step #0 - "Enable Google IAM APIs": Please note that the `gcloud` entrypoint must be specified when using these
+Step #0 - "Enable Google IAM APIs": images.
+Step #0 - "Enable Google IAM APIs": 
+Step #0 - "Enable Google IAM APIs":                 ***** END OF NOTICE *****
+Step #0 - "Enable Google IAM APIs": 
+Step #0 - "Enable Google IAM APIs": ERROR: (gcloud.services.enable) PERMISSION_DENIED: The caller does not have permission
+Finished Step #0 - "Enable Google IAM APIs"
+ERROR
+ERROR: build step 0 "gcr.io/cloud-builders/gcloud" failed: step exited with non-zero status: 1
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Task: Set Up GCP Infra pipeline executed, check the logs if its successful
+Creating Firestore Native Database
+Firestore Database Created
+Skipped microservices deployment
+Setup GCP infra script execution completed

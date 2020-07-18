@@ -18,6 +18,9 @@
     <md-card-actions>
       <slot name="footer" />
     </md-card-actions>
+    <br>
+    <br>
+    <br>
   </md-card>
 </template>
 
