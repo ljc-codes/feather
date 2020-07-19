@@ -6,7 +6,7 @@
 
 **toucan** is starter code for developing modern web apps. 
 
-## Technology
+## Stack
 
 **Google Cloud Platform + Firebase +  Guvicorn +  Mongo Atlas + Graphql + Vue + Apollo**
 
