@@ -1,17 +1,17 @@
-# 🦜 Toucan 
+# 🦜 Feather
 - OSX (Darwin) compatible 
 - version: BETA
 
 ## What is it?
 
-**toucan** is starter code for developing modern web apps. 
+**feather** is starter code for developing modern web apps. 
 
 ## Stack
 
 **Google Cloud Platform + Firebase +  Guvicorn +  Mongo Atlas + Graphql + Vue + Apollo**
 
 ## Features
-Out of the box, Toucan comes with several features including: 
+Out of the box, Feather comes with several features including: 
    - Singlepage Vue frontend
    - Uvicorn ASGI server hosting backend a graphql api 
    - Easy to use yaml for specifying build configurations and external resources. 
@@ -20,7 +20,7 @@ Out of the box, Toucan comes with several features including:
    - Scripts to build and run services. 
    - GCP CIDC (if triggers and IAM are configured) 
 
-## Running Toucan
+## Running Feather
 Current support is limited to OSX
 
 ```sh
@@ -30,16 +30,16 @@ Current support is limited to OSX
 
 ## Services
 
-Toucan consists of two services: 
+Feather consists of two services: 
 
 1) **client** - GCP Cloud Build + Firebase Hosting + Vue + Apollo
 2) **server** - GCP Cloud Run + Guvicorn + MongoDB Atlas + Graphql 
 
 ## Config
 
-All service config is done within, toucan/config. 
+All service config is done within, feather/config. 
 
-1) Toucan features GCP cloud build / cloud run yaml files for CICD. 
+1) Feather features GCP cloud build / cloud run yaml files for CICD. 
    Project configuration can be found in 'server.cloudbuild.yaml' file. 
    IAM configuration and repo triggers are then required.  
 
