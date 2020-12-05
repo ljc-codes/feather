@@ -1,4 +1,4 @@
-# 🦜 Feather
+# 🦢  Feather
 - OSX (Darwin) compatible 
 - version: BETA
 
