@@ -2,7 +2,6 @@
 - OSX (Darwin) compatible 
 - version: BETA
 
-## What is it?
 
 **feather** is starter code for developing modern web apps. 
 
